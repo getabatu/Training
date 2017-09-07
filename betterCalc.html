@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>calc-2</title>
+
+	<style type="text/css">
+
+		h3 {
+			text-align: center;
+			margin-top: 20px;
+			padding-top: 10px;
+      		color: #454552;
+		}
+		.container {
+			margin: 0 auto;
+			background-color: #fec8c9;
+			width: 300px;
+		}
+
+		form {
+			margin: 0 auto;
+			width: 200px;
+			height: 300px;
+		}
+
+		#display {
+			width: 200px;
+			height: 30px;
+		}
+
+		input[type=button], input[type=reset] {
+			margin-top: 10px;
+			width: 63px;
+		}
+    
+	    .button {
+	      border-radius: 1px;
+	      background-color: #454552;
+	      color: #f4f5f9;
+	      height: 30px;
+	    }
+
+	</style>
+</head>
+<body>
+	<div class="container">	
+    <button><a href="index.html">Back</a></button>
+
+		<h3>Simple Javascript Calculator 2</h3>
+		<form name="calc">
+
+			<input type="display" name="display" id="display" placeholder="0">
+			<br>
+	
+			<input type="reset" name="btnClear" value="c" class="button">
+			<input type="button" class="button" name="btnEqual" value="=" onclick="calc.display.value=eval(calc.display.value)">
+			<input type="button" class="button" name="btnAdd" value="+" onclick="displayValue(this.value)">
+			<br>
+			<input type="button" class="button" name="btnDivide" value="/" onclick="displayValue(this.value)">
+			<input type="button" class="button" name="btnMulitply" value="*" onclick="displayValue(this.value)">
+			<input type="button" class="button" name="btnSubtract" value="-" onclick="displayValue(this.value)">
+			<br>
+			<input type="button" class="button" name="btn7" value=7 onclick="displayValue(this.value)">
+			<input type="button" class="button" name="btn8" value=8 onclick="displayValue(this.value)">
+			<input type="button" class="button" name="btn9" value=9 onclick="displayValue(this.value)">
+			<br>
+			<input type="button" class="button" name="btn4" value=4 onclick="displayValue(this.value)">
+			<input type="button" class="button" name="btn5" value=5 onclick="displayValue(this.value)">
+			<input type="button" class="button" name="btn6" value=6 onclick="displayValue(this.value)">
+			<br>
+			<input type="button" class="button" name="btn1" value=1 onclick="displayValue(this.value)">
+			<input type="button" class="button" name="btn2" value=2 onclick="displayValue(this.value)">
+			<input type="button" class="button" name="btn3" value=3 onclick="displayValue(this.value)">
+			<br>
+			
+			<input type="button" class="button" name="btn0" value=0 onclick="displayValue(this.value)">
+		</form>
+	</div>
+
+	<script src="olCalc.js"></script>
+
+</body>
+</html>
